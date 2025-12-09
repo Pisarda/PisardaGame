@@ -1,13 +1,10 @@
 #pragma once
-#include "config.h"
-#include <raylib.h>
-class Player
+#include "entity.h"
+
+class Player : public Entity
 {
 public:
-	Player();
-	void move();
-	void draw();
-private:
-	int x;
-	int y;
+    Player();
+
+    void move();
 };
